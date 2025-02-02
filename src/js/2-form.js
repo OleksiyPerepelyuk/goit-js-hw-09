@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  if (formData.email === '' || formData.message === '') {
+  if (formData.email.trim() === '' || formData.message.trim() === '') {
     alert('Fill please all fields');
   } else {
     console.log(formData);
